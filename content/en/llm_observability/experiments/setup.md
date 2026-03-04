@@ -559,7 +559,7 @@ for i, record in enumerate(records, start=1):
         # even if your task creates child spans internally
         span.set_attribute(
             "gen_ai.input.messages",
-            json.dumps([{"role": "user", "content": record["input"]["question"]}]),
+            json.dumps([{"role": "user", "parts": [{"type": "text", "content": record["input"]["question"]}]}]),
         )
 
         output = task(record["input"])
@@ -567,7 +567,7 @@ for i, record in enumerate(records, start=1):
         # Set output on the root span after the task completes
         span.set_attribute(
             "gen_ai.output.messages",
-            json.dumps([{"role": "assistant", "content": output}]),
+            json.dumps([{"role": "assistant", "parts": [{"type": "text", "content": output}]}]),
         )
 
 # Flush all spans before the process exits
