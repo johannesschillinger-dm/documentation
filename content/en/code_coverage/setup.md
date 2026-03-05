@@ -357,6 +357,31 @@ To upload your code coverage reports to Datadog, run the following command. Prov
 
 {{< tabs >}}
 {{% tab "GitHub Actions" %}}
+
+Use the [Datadog Code Coverage Upload][15] GitHub Action to upload coverage reports. This action uses the `datadog-ci` standalone binary and does not require Node.js:
+
+<pre>
+<code class="language-yaml" data-lang="yaml">
+steps:
+- name: Upload coverage reports to Datadog
+  uses: DataDog/coverage-upload-github-action@v1
+  with:
+    api_key: ${{ secrets.DD_API_KEY }}
+    site: {{< region-param key="dd_site" >}}
+</code>
+</pre>
+
+You can optionally specify additional inputs:
+
+| Input | Description | Default |
+|---|---|---|
+| `files` | Directories, files, or glob patterns for coverage report files. | `.` |
+| `format` | Override coverage report format (auto-detected by default). | |
+| `flags` | Flags for grouping and filtering (for example, `type:unit-tests`). | |
+| `base-path` | Base path for file paths within coverage reports. | |
+
+Alternatively, if you already have `datadog-ci` installed, you can run the upload command directly:
+
 <pre>
 <code class="language-yaml" data-lang="yaml">
 steps:
@@ -481,3 +506,4 @@ Datadog deduplicates overlapping files across reports, which can result in diffe
 [12]: #integrate-with-source-code-provider
 [13]: https://hub.docker.com/r/datadog/ci
 [14]: /code_coverage/configuration#pr-gates
+[15]: https://github.com/marketplace/actions/datadog-code-coverage-upload
