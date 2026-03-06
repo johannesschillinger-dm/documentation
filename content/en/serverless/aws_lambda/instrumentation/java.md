@@ -24,10 +24,6 @@ If you previously set up your Lambda functions using the Datadog Forwarder, see 
 
 If you are using the Datadog Lambda layers `dd-trace-java:4` (or older) and `Datadog-Extension:24` (or older), follow the [special instructions to upgrade][10].
 
-{{< callout url="/agentic_onboarding/setup/" btn_hidden="false" header="Agentically add Datadog to your Lambda functions">}}
-Use Agentic Onboarding with your favorite AI coding tool, such as Cursor or Claude, to bulk-add Datadog monitoring to your Lambda functions.
-{{< /callout >}}
-
 ## Setup
 
 {{< tabs >}}
