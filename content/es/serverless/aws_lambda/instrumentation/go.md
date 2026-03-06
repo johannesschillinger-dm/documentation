@@ -20,8 +20,8 @@ title: Instrumentación de aplicaciones serverless de Go
 
 <div class="alert alert-info">La versión 67+ de Datadog Lambda Extension está optimizada para reducir significativamente la duración del arranque en frío. <a href="/serverless/aws_lambda/configuration/?tab=datadogcli#using-datadog-lambda-extension-v67">Más información</a>.</div>
 
-{{< callout url="https://www.datadoghq.com/product-preview/agentic-onboarding-for-serverless-applications/" btn_hidden="false" header="Agentically add Datadog to your Lambda Functions">}}
-La incorporación del Agent para Datadog Serverless está en la vista previa. Utiliza tu herramienta de codificación de IA favorita, como Cursor o Claude, para agregar en bloque la monitorización de Datadog a tus funciones Lambda.
+{{< callout url="/agentic_onboarding/setup/" btn_hidden="false" header="Agentically add Datadog to your Lambda functions">}}
+Utiliza la incorporación del Agent con tu herramienta de codificación de IA favorita, como Cursor o Claude, para agregar en bloque la monitorización de Datadog a tus funciones Lambda.
 {{< /callout >}}
 
 ## Instalación
