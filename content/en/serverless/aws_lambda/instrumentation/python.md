@@ -413,6 +413,11 @@ To configure Datadog using SST v3, follow these steps:
 [8]: https://aws.github.io/chalice/
 [9]: https://aws.github.io/chalice/topics/middleware.html
 {{% /tab %}}
+{{% tab "Onboarding MCP Tool" %}}
+
+{{< lambda-onboarding-mcp-tool >}}
+
+{{% /tab %}}
 {{< /tabs >}}
 
 ## FIPS compliance

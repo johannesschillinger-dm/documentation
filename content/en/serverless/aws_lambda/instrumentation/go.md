@@ -315,6 +315,11 @@ Replace `<AWS_REGION>` with a valid AWS region, such as `us-east-1`.
 [1]: https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html
 [2]: https://app.datadoghq.com/organization-settings/api-keys
 {{% /tab %}}
+{{% tab "Onboarding MCP Tool" %}}
+
+{{< lambda-onboarding-mcp-tool >}}
+
+{{% /tab %}}
 {{< /tabs >}}
 
 ### Install the Datadog Lambda library

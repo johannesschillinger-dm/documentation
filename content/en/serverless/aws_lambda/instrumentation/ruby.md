@@ -483,6 +483,11 @@ The [`lambda-datadog`][1] Terraform module wraps the [`aws_lambda_function`][2] 
 [2]: https://gallery.ecr.aws/datadog/lambda-extension
 [3]: https://app.datadoghq.com/organization-settings/api-keys
 {{% /tab %}}
+{{% tab "Onboarding MCP Tool" %}}
+
+{{< lambda-onboarding-mcp-tool >}}
+
+{{% /tab %}}
 {{< /tabs >}}
 
 ## FIPS compliance
