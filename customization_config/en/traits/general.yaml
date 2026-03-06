@@ -52,3 +52,8 @@ traits:
   label: "API"
   type: text
   internal_notes: The instrumentation API type, such as OpenTelemetry API or Datadog native API.
+
+- id: runtime
+  label: "Runtime"
+  type: text
+  internal_notes: The runtime environment, such as JVM or GraalVM Native Image. Used when a language has multiple runtime targets.
