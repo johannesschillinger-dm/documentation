@@ -373,6 +373,11 @@ The [`lambda-datadog`][1] Terraform module wraps the [`aws_lambda_function`][2] 
 [3]: https://github.com/DataDog/terraform-aws-lambda-datadog?tab=readme-ov-file#inputs
 [4]: /getting_started/site/
 {{% /tab %}}
+{{% tab "Onboarding MCP Tool" %}}
+
+{{< lambda-onboarding-mcp-tool >}}
+
+{{% /tab %}}
 {{% tab "Custom" %}}
 
 <div class="alert alert-info">If you are not using a serverless development tool that Datadog supports, such as the Serverless Framework, Datadog strongly encourages you instrument your serverless applications with the <a href="./?tab=datadogcli">Datadog CLI</a>.</div>
@@ -478,11 +483,6 @@ The [`lambda-datadog`][1] Terraform module wraps the [`aws_lambda_function`][2] 
 [1]: https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html
 [2]: https://gallery.ecr.aws/datadog/lambda-extension
 [3]: https://app.datadoghq.com/organization-settings/api-keys
-{{% /tab %}}
-{{% tab "Onboarding MCP Tool" %}}
-
-{{< lambda-onboarding-mcp-tool >}}
-
 {{% /tab %}}
 {{< /tabs >}}
 

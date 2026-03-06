@@ -311,6 +311,11 @@ To configure Datadog using SST v3, follow these steps:
 [2]: https://docs.datadoghq.com/serverless/guide/handler_wrapper
 
 {{% /tab %}}
+{{% tab "Onboarding MCP Tool" %}}
+
+{{< lambda-onboarding-mcp-tool >}}
+
+{{% /tab %}}
 {{% tab "Custom" %}}
 
 <div class="alert alert-info">If you are not using a serverless development tool that Datadog supports, such as the Serverless Framework or AWS CDK, Datadog strongly encourages you instrument your serverless applications with the <a href="./?tab=datadogcli">Datadog CLI</a>.</div>
@@ -408,11 +413,6 @@ To configure Datadog using SST v3, follow these steps:
 [7]: https://app.datadoghq.com/organization-settings/api-keys
 [8]: https://aws.github.io/chalice/
 [9]: https://aws.github.io/chalice/topics/middleware.html
-{{% /tab %}}
-{{% tab "Onboarding MCP Tool" %}}
-
-{{< lambda-onboarding-mcp-tool >}}
-
 {{% /tab %}}
 {{< /tabs >}}
 
