@@ -1982,34 +1982,6 @@
       "description": "Create a new SLO report returns \"OK\" response"
     }
   ],
-  "CreateScorecardRule": [
-    {
-      "group": "service_scorecards",
-      "suffix": "",
-      "description": "Create a new rule returns \"Created\" response"
-    }
-  ],
-  "CreateScorecardOutcomesBatch": [
-    {
-      "group": "service_scorecards",
-      "suffix": "",
-      "description": "Create outcomes batch returns \"OK\" response"
-    }
-  ],
-  "UpdateScorecardOutcomesAsync": [
-    {
-      "group": "service_scorecards",
-      "suffix": "",
-      "description": "Update Scorecard outcomes asynchronously returns \"Accepted\" response"
-    }
-  ],
-  "UpdateScorecardRule": [
-    {
-      "group": "service_scorecards",
-      "suffix": "",
-      "description": "Update an existing rule returns \"Rule updated successfully\" response"
-    }
-  ],
   "UpsertCatalogEntity": [
     {
       "group": "software_catalog",
